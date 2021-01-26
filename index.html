@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="">
+  
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="/main.js"></script> -->
   
   <title>Mobile WebApp</title>
 </head>
@@ -17,14 +18,14 @@
       <button id="home__button">
         <img id="home__logo" src="/styles/medical-logo-design_no_background.png" alt="Logo">
       </button>
-      <button id="open_menu__button" class="menu__button">
+      <button class="open_menu__button menu__button">
         <i class="fas fa-bars"></i>
       </button>
-      <button id="close_menu__button" class="menu__button">
+      <button class="close_menu__button menu__button">
         <i class="fas fa-times"></i>
       </button>
     </nav>
-    <menu id="menu">
+    <menu class="menu">
       <a href="">
         Home
         <i class="fas fa-home"></i>
@@ -35,11 +36,11 @@
       </a>
       <a href="">
         About us
-        <i class="fas fa-home"></i>
+        <i class="fas fa-info"></i>
       </a>
       <a href="">
         Contact
-        <i class="fas fa-home"></i>
+        <i class="fas fa-phone"></i>
       </a>
     </menu>
   </header>
@@ -50,5 +51,28 @@
     <button>Services</button>
     <button>Contact</button>
   </footer>
+  <script>
+    var closeMenuButton = document.querySelector(".close_menu__button");
+    var openMenuButton = document.querySelector(".open_menu__button");
+    var menuSec = document.querySelector(".menu");
+    var headerEl = document.querySelector("header");
+    var footerEl = document.querySelector("footer");
+
+    openMenuButton.addEventListener('click', () => {
+      headerEl.classList.toggle('header--expanded');
+      menuSec.classList.toggle('menu--visible');
+      footerEl.classList.toggle('footer--invisible');
+      closeMenuButton.classList.toggle('close_menu__button--visible');
+      openMenuButton.classList.toggle('open_menu__button--invisible');
+    })
+
+    closeMenuButton.addEventListener('click', () => {
+      headerEl.classList.toggle('header--expanded');
+      menuSec.classList.toggle('menu--visible');
+      footerEl.classList.toggle('footer--invisible');
+      closeMenuButton.classList.toggle('close_menu__button--visible');
+      openMenuButton.classList.toggle('open_menu__button--invisible');
+    })
+  </script>
 </body>
 </html>
