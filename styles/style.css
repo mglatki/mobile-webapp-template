@@ -145,7 +145,7 @@ footer > button {
 footer > a {
     display: grid;
     place-items: center;
-    
+
     text-decoration: none;
     color: black;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -166,6 +166,17 @@ footer > a {
 
         min-height: 100%;
         width: 12rem;
+    }
+
+
+    #home__button {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #home__logo {
+        width: 10rem;
+        height: 10rem;
     }
 
     .menu {
