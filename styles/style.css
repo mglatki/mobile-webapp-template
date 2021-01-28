@@ -142,6 +142,20 @@ footer > button {
     border-radius: 1rem;
 }
 
+footer > a {
+    display: grid;
+    place-items: center;
+    
+    text-decoration: none;
+    color: black;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;    
+
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 1rem;
+}
+
 @media (min-width:990px) {
 
     header {
