@@ -196,6 +196,10 @@ footer > a {
     }
 
     .menu i {
+        display: grid;
+        place-items: center;
+        width: 1.5rem;
+        
         order: -1;
         margin-left: 0;
         margin-right: 0.5rem;
