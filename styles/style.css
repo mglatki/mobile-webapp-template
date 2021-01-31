@@ -185,6 +185,14 @@ footer > a {
         width: 10rem;
         height: 10rem;
     }
+    
+    .open_menu__button {        
+        display: none;
+    }
+    
+    .close_menu__button {
+        display: none;
+    }
 
     .menu {
         display: grid;
