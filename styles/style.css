@@ -105,6 +105,13 @@ nav > button {
 
     background-color: whitesmoke;
     border-radius: 1rem;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+}
+
+.menu > a:hover {
+    background-color: lightgray;
 }
 
 .menu i {
